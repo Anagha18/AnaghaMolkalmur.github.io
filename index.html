@@ -13,6 +13,91 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #f5f5dc;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal-header {
+        padding: 2px 16px;
+        background-color: #f5f5dc;
+        color: #f5f5dc;
+      }
+
+      .modal-body {
+        padding: 2px 16px;
+      }
+
+      .modal-footer {
+        padding: 2px 16px;
+        background-color: #f5f5dc;
+        color: #f5f5dc;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Nav -->
@@ -87,17 +172,38 @@
                 Designed and Developed an Expiration Notification android
                 Application in tandem with Amazon. Adding high impetus to high
                 quality work and good work ethics, I earned my final semester
-                internship at Amazon.
+                internship at Amazon. Designed and Developed an Expiration
+                Notification android Application in tandem with Amazon. Adding
+                high impetus to high quality work and good work ethics, I earned
+                my final semester internship at Amazon.Designed and Developed an
+                Expiration Notification android Application in tandem with
+                Amazon. Adding high impetus to high quality work and good work
+                ethics
               </p>
+              <button type="button" onclick="alert('Hello world!')">
+                Transcripts
+              </button>
             </section>
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <span class="icon featured fa-thumbs-up"></span>
-              <h3>Feugiat posuere</h3>
+              <img
+                src="segautomotive.webp"
+                height="150"
+                width="200"
+                alt="Amazon"
+              />
+              <h3>SEG Automotive</h3>
+              <h4>Project Intern <i>Jul 2020 - Oct 2020</i></h4>
               <p>
-                Ornare nulla proin odio consequat sapien vestibulum ipsum primis
-                sed amet consequat lorem dolore.
+                I led the pilot project on introducing security in the UDS
+                protocol while accessing the ECU on board automobile
+                components.The UDS protocol is primarily used to access the
+                dedicated servers on board ECUs and read/write/ reprogram the
+                ECUs.
+                <br />
+                &nbsp;I worked on configuring the security access and introduced
+                it into that Code base of the company, security at level 1.
               </p>
             </section>
           </div>
@@ -115,11 +221,8 @@
     <article id="portfolio" class="wrapper style3">
       <div class="container">
         <header>
-          <h2>Here’s some stuff I made recently.</h2>
-          <p>
-            Proin odio consequat sapien vestibulum consequat lorem dolore
-            feugiat.
-          </p>
+          <h2>My Projects</h2>
+          <p>Here’s some stuff I worked on recently.</p>
         </header>
         <div class="row">
           <div class="col-4 col-6-medium col-12-small">
@@ -127,8 +230,51 @@
               <a href="#" class="image featured"
                 ><img src="images/pic01.jpg" alt=""
               /></a>
-              <h3><a href="#">Magna feugiat</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <u
+                ><h3>
+                  <a href="https://github.com/Anagha18/MarvinEye"
+                    ><img
+                      src="link.png"
+                      height="20"
+                      width="20"
+                      alt="link"
+                    /><img
+                      src="github.jpg"
+                      height="20"
+                      width="20"
+                      alt="link"
+                    />MarvinEye</a
+                  >
+                </h3></u
+              >
+              <i>
+                A multimodal, flexible and robust computer vision framework.
+              </i>
+              <p>
+                <b>Summary.</b> MarvinEye gives the oject it is integrated with
+                a sense of position by estimating distance to a pre-set visual
+                aid, in a resource optimal manner. The DSMAC termina way
+                guidance algorithm for air artillery systems has been adapted to
+                fit this framework and goes by the name SDEC, where the distance
+                moved is validated based on how much of the frame the object
+                occupies- Clarity of Vision (CoV). The SDEC derives an equation
+                for the best fit curve plotted through the CoV, using
+                <u>Polynomial Regression</u>. The Sensor height and Triangle
+                Similarity algorithms have also been used, after optimizing the
+                same. In order to increase the throughput, the code has also
+                been <u>accelerated on the GPU</u>. The MarvinEye framework can
+                be integrated into white canes for the blind, path following
+                bots and other constrained environment cases. It can also be
+                integrated into Rovers to ensure smooth operations. have
+                authored the paper and submitted it to the
+                <a href="https://conferences.uaeu.ac.ae/iit20/en/welcome.shtml"
+                  >International Conference on Innovations in Information
+                  Technology 2020</a
+                >
+                to be held in the UAE.
+                <br />
+                <b>Language Used.</b> Python
+              </p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -136,8 +282,35 @@
               <a href="#" class="image featured"
                 ><img src="images/pic02.jpg" alt=""
               /></a>
-              <h3><a href="#">Veroeros primis</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <h3><a href="#">SoLoMoBro</a></h3>
+              <i
+                >A Fault Tolerant Mobile Ad-hoc network that distributes tasks
+                in task level parallelism.</i
+              >
+              <p>
+                <b>Summary.</b>Designed and Implpemented a <u>MANET</u> in a
+                plug and play fashion that distributes tasks to clients in the
+                cluster over <u>TCP/IP</u>, over a star topology with 1 master
+                node and several clients. It is android application that can be
+                installed on <u>mobile devices</u> and also compatible on
+                <u>linux systems</u>, it functions over the <u>LAN</u>. Any user
+                can assign work through the server, the tasks are partitioned
+                and distributed over the client cluster based on priority of the
+                client using weighted round robin <u>load balancing</u>, taking
+                the <u>device heterogenity</u> into consideration (utilizing
+                client specs like number of cores and clock speed currently
+                available). A client can join the network at any point in time,
+                the network handles both master node and client faults and gets
+                the network functioning again in a very short duration. I have
+                authored the paper and submitted it to the
+                <a href="https://icdcit.ac.in/"
+                  >Internation Conference on Distributed Computing and Internet
+                  Technology 2021</a
+                >
+                to be held in Orissa, India.
+                <br />
+                <b>Language Used.</b> C++, C, CMake, Java.
+              </p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -145,8 +318,11 @@
               <a href="#" class="image featured"
                 ><img src="images/pic03.jpg" alt=""
               /></a>
-              <h3><a href="#">Lorem ipsum</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <h3><a href="#">RideShare</a></h3>
+              <p>
+                A ride sharing application that utilizes the cloud to book and
+                share Taxi's.
+              </p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -154,8 +330,11 @@
               <a href="#" class="image featured"
                 ><img src="images/pic04.jpg" alt=""
               /></a>
-              <h3><a href="#">Tempus dolore</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <h3><a href="#">Intel Contest</a></h3>
+              <p>
+                Programmed a CapsNet that can run on the MNist Data set to
+                convert --- to ---
+              </p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -163,7 +342,7 @@
               <a href="#" class="image featured"
                 ><img src="images/pic05.jpg" alt=""
               /></a>
-              <h3><a href="#">Feugiat aliquam</a></h3>
+              <h3><a href="#">MPCA</a></h3>
               <p>Ornare nulla proin odio consequat.</p>
             </article>
           </div>
@@ -172,8 +351,32 @@
               <a href="#" class="image featured"
                 ><img src="images/pic06.jpg" alt=""
               /></a>
-              <h3><a href="#">Sed amet ornare</a></h3>
+              <h3><a href="#">Library Management</a></h3>
               <p>Ornare nulla proin odio consequat.</p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="#" class="image featured"
+                ><img src="images/pic06.jpg" alt=""
+              /></a>
+              <h3><a href="#">Deimos</a></h3>
+              <p>
+                Space Debris Collision Avoidance Techniques for nano satellites
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <h3><a href="#">Database Projects</a></h3>
+              <p>Parking booking, DBMS, ADBMS,</p>
+              <p>Make it all under other projects</p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <h3><a href="#">Data Science and ML Projects</a></h3>
+              <p>ML course, WT-1,2, IDS</p>
             </article>
           </div>
         </div>
@@ -190,8 +393,8 @@
     <article id="contact" class="wrapper style4">
       <div class="container medium">
         <header>
-          <h2>Have me make stuff for you.</h2>
-          <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+          <h2>Please do contact me!</h2>
+          <p>Send me a message =)</p>
         </header>
         <div class="row">
           <div class="col-12">
