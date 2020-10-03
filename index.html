@@ -141,7 +141,11 @@
               Music. I am also a sports enthusiast having represented my school
               team in Football, Basketball and Throwball.
             </p>
-            <a href="#work" class="button">CV</a>
+            <a
+              href="https://drive.google.com/file/d/1YNBohukCh50ED1dkiKHIXFhpellkw4X4/view?usp=sharing"
+              class="button"
+              >CV</a
+            >
 
             <ul class="social">
               <li>
@@ -351,7 +355,7 @@
               <p align="left">
                 <b>Concepts Used:</b> MANET, Fault Tolerance, Device
                 Heterogentiy, Load Balancing, TCP/IP, Cluster Computing, Linux
-                compatible
+                compatible, scalable
               </p>
               <p>Status: Paper submitted to ICDCIT 21</p>
               <!-- Trigger/Open The Modal -->
@@ -428,7 +432,8 @@
               >
               <p align="left">
                 <b>Concepts Used:</b> AWS EC2, Fault Tolerance, Message Broker,
-                Load Balancing, High Availability, Docker Container, SQLite
+                Load Balancing, High Availability, Docker Container,
+                master-slaves, Load based Auto-Scale, cluster coordinator
               </p>
               <!-- Trigger/Open The Modal -->
               <button class="modal1" id="myBtn2" style="color: #000">
@@ -446,28 +451,38 @@
                   <div class="modal-body">
                     <br />
                     <p>
-                      <b>Summary.</b>Created a Ride Sharing Application
-                      utilizing the Amazon Web Services EC2 instance. The
-                      application was hosted on Amazon EC2 instance and an
-                      SQLite Database was used to store data. The application
-                      provided services to create a user, ride, add cab sharers
-                      to the ride, cancel a ride, delete a user. The user and
-                      rides functionalities were hosted as microservices on
-                      separate containers with a load balancer. High
-                      availability and Fault Tolerant Database as a Service was
-                      then created to facilitate for the RideShare Application.
-                      I implemented a custom database orchestrator engine that
-                      performed database read and write according to the given
-                      specification for both the microservices. Communication
-                      between the 2 took place through the message broker-
-                      RabbitMQ. High availabilty was introduced into the
-                      application through zookeeper. The whole application was
-                      launched and managed on the instance in the form of
-                      dockers.
+                      <b>Summary.</b>Created a Database as a Service for the
+                      RideShare Application utilizing the Amazon Web Services
+                      EC2 instance. I created the RideShare Application, which
+                      was hosted on Amazon EC2 instance and an SQLite Database
+                      was used to store data. The application provided services
+                      to create a user, ride, add cab sharers to the ride,
+                      cancel a ride, delete a user. The user and rides
+                      functionalities were hosted as microservices on separate
+                      containers with a load balancer. High availability and
+                      Fault Tolerant Database as a Service was then created to
+                      facilitate for this RideShare application. I implemented a
+                      custom database orchestrator engine that performed
+                      database read and write. RabbitMQ (Advanced Message
+                      Queueing Protocol) was used as the Message Broker. Round
+                      Robin Load Balancing was implemented in the master-slave
+                      configuration, using NGINX. Zookeeper was used as the
+                      cluster coordinting service, keeping a watch on all the
+                      nodes for faults. Automatic scaling was implemented, where
+                      is the load increased, more workers were spawned and
+                      workers were killed as load decreased in a pre-set time
+                      frame of 2 minutes. Fault tolerance was implemented for
+                      workers and master, if the master failed, a custom
+                      developed re-election was held based on priority and if a
+                      worker failed, another worker was spawned only if the
+                      failure did not take place due to scaling down. High
+                      availabilty was introduced into the application through
+                      zookeeper. The whole application was launched and managed
+                      on the instance in the form of dockers containers.
 
                       <br />
                       <b>Technology used.</b> Python, RabbitMQ, Zookeeper,
-                      Docker Containers, AWS EC2, SQLite.
+                      Docker Containers, AWS EC2, NGINX, SQLite.
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -734,7 +749,7 @@
                         >Book My Slot - Android App
                       </a>
                       <br />
-                      <a href="https://github.com/Anagha18/lbw-classification"
+                      <a href="https://github.com/Anagha18/LBW_Classification"
                         >LBW Classification - ML
                       </a>
                       <br />
