@@ -132,7 +132,7 @@
 
           <div class="col-8 col-7-large col-12-medium">
             <header>
-              <h1>Hi. I'm <strong>Anagha M Anil Kumar</strong>.</h1>
+              <h1>I'm <strong>Anagha Anil Kumar</strong>.</h1>
             </header>
             <p>
               Hey! I am Anagha Molkalmur. A Computer Science and Engineering
@@ -178,7 +178,7 @@
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
               <!-- <span class="icon featured fa-comments"></span> -->
-              <img src="HalbexLogo.jpg" width="300" height="200" alt="Bosch" />
+              <img src="HalbexLogo.jpg" height="150" width="200" alt="Bosch" />
               <h3>HalbEx</h3>
               <h4>
                 Project Lead for the High Altitude Balloon Experiment
@@ -207,7 +207,7 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <img src="bel.jpg" height="200" width="300" alt="Amazon" />
+              <img src="bel.jpg" height="150" width="200" alt="Amazon" />
               <h3>DIDT</h3>
               <h4>
                 Dynamic Intruder Detection and Tracking
@@ -254,7 +254,7 @@
         <div class="row" id="MarvinEye">
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="MarvinEye.png" height="300" width="300" alt="" />
+              <img src="MarvinEye.png" height="200" width="200" alt="" />
 
               <h3>
                 <a href="https://github.com/MarvinEye/G-N"
@@ -337,7 +337,7 @@
 
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="SoLoMoBro.jpg" height="300" width="300" alt="" />
+              <img src="SoLoMoBro.jpg" height="200" width="200" alt="" />
               <h3>
                 <a href="https://github.com/Anagha18/SoLoMoBro"
                   ><img src="link.png" height="20" width="20" alt="link" /><img
@@ -375,10 +375,10 @@
                     <br />
                     <p align="justify">
                       <b>Summary.</b>Designed and implemented a <u>MANET</u> in
-                      a plug and play fashion. Tasks are distributed to clients
-                      in the cluster over <u>TCP/IP</u>, utilizing a star
-                      topology with 1 master node and several clients. It is an
-                      application that can be installed on android
+                      a <u>plug and play</u> fashion. Tasks are distributed to
+                      clients in the cluster over <u>TCP/IP</u>, utilizing a
+                      star topology with 1 master node and several clients. It
+                      is an application that can be installed on android
                       <u>mobile devices</u> and also compatible on
                       <u>linux systems</u>, it functions over the <u>LAN</u>.
                       Any user can assign work through the server, the tasks are
@@ -390,7 +390,11 @@
                       currently available). A client can join the network at any
                       point in time, the network handles both master and client
                       faults and gets the network functioning again in a very
-                      short duration. I have authored the paper and submitted it
+                      short duration. If the master fails,
+                      <u>priority based election</u> takes place (based on
+                      compute power) and if a client fails, its tasks are
+                      re-distributed to another client in the cluster (plug and
+                      play fashion). I have authored the paper and submitted it
                       to the
                       <a href="https://icdcit.ac.in/"
                         >Internation Conference on Distributed Computing and
@@ -415,7 +419,7 @@
 
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="dbaas.PNG" height="300" width="300"" alt="" />
+              <img src="dbaas.PNG" height="200" width="200" alt="" />
               <h3>
                 <a href="https://github.com/Anagha18/RideShare"
                   ><img src="link.png" height="20" width="20" alt="link" /><img
@@ -451,34 +455,38 @@
                   <div class="modal-body">
                     <br />
                     <p>
-                      <b>Summary.</b>Created a Database as a Service for the
-                      RideShare Application utilizing the Amazon Web Services
-                      EC2 instance. I created the RideShare Application, which
-                      was hosted on Amazon EC2 instance and an SQLite Database
-                      was used to store data. The application provided services
-                      to create a user, ride, add cab sharers to the ride,
-                      cancel a ride, delete a user. The user and rides
-                      functionalities were hosted as microservices on separate
-                      containers with a load balancer. High availability and
-                      Fault Tolerant Database as a Service was then created to
-                      facilitate for this RideShare application. I implemented a
-                      custom database orchestrator engine that performed
-                      database read and write. RabbitMQ (Advanced Message
-                      Queueing Protocol) was used as the Message Broker. Round
-                      Robin Load Balancing was implemented in the master-slave
-                      configuration, using NGINX. Zookeeper was used as the
-                      cluster coordinting service, keeping a watch on all the
-                      nodes for faults. Automatic scaling was implemented, where
-                      is the load increased, more workers were spawned and
-                      workers were killed as load decreased in a pre-set time
-                      frame of 2 minutes. Fault tolerance was implemented for
-                      workers and master, if the master failed, a custom
-                      developed re-election was held based on priority and if a
+                      <b>Summary.</b>Created a <u>Database as a Service</u> for
+                      the RideShare Application utilizing the
+                      <u>Amazon Web Services EC2</u> instance. I created the
+                      RideShare Application, which was hosted on Amazon EC2
+                      instance and an SQLite Database was used to store data.
+                      The application provided services to create a user, ride,
+                      add cab sharers to the ride, cancel a ride, delete a user.
+                      The user and rides functionalities were hosted as
+                      microservices on separate containers with a load balancer.
+                      <u>High availability</u> and
+                      <u>Fault Tolerant</u> Database as a Service was then
+                      created to facilitate for this RideShare application. I
+                      implemented a <u>custom database orchestrator</u> engine
+                      that performed database read and write.
+                      <u>RabbitMQ</u> (Advanced Message Queueing Protocol) was
+                      used as the Message Broker.
+                      <u>Round Robin Load Balancing</u> was implemented in the
+                      <u>master-slave</u> configuration, using <u>NGINX</u>.
+                      <u>Zookeeper</u> was used as the
+                      <u>cluster coordinting service</u>, keeping a watch on all
+                      the nodes for faults. <u>Automatic scaling</u> was
+                      implemented, where is the load increased, more workers
+                      were spawned and workers were killed as load decreased in
+                      a pre-set time frame of 2 minutes.
+                      <u>Fault tolerance</u> was implemented for workers and
+                      master, if the master failed, a custom developed
+                      <u>re-election</u> was held based on priority and if a
                       worker failed, another worker was spawned only if the
                       failure did not take place due to scaling down. High
                       availabilty was introduced into the application through
                       zookeeper. The whole application was launched and managed
-                      on the instance in the form of dockers containers.
+                      on the instance in the form of <u>dockers containers</u>.
 
                       <br />
                       <b>Technology used.</b> Python, RabbitMQ, Zookeeper,
@@ -498,7 +506,7 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="mpca.jpg" height="300" width="300" alt="" />
+              <img src="mpca.jpg" height="200" width="200" alt="" />
 
               <h3>
                 <a href="https://github.com/Anagha18/TrafficModel"
@@ -507,7 +515,7 @@
                     height="20"
                     width="20"
                     alt="link"
-                  /><u>MPCA</u></a
+                  /><u>Busy City Road Model</u></a
                 >
               </h3>
               <i
@@ -532,13 +540,13 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h3>MPCA</h3>
+                    <h3>Busy City Road Model</h3>
                   </div>
                   <div class="modal-body">
                     <br />
                     <p>
                       <b>Summary.</b> Designed and Implemented a model using
-                      Arduino in Embedded C. The model made was made with
+                      <u>Arduino in Embedded C</u>. The model made was made with
                       consideration towards slow moving traffic congestions and
                       stray animals that may unexpectedly cross roads. The model
                       is a 4-way traffic junction that has 4 signals placed
@@ -585,7 +593,7 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="dbms.PNG" height="300" width="300" alt="" />
+              <img src="dbms.PNG" height="200" width="200" alt="" />
               <h3>
                 <a href="https://github.com/Anagha18/Libment"
                   ><img src="link.png" height="20" width="20" alt="link" /><img
@@ -618,23 +626,25 @@
                   <div class="modal-body">
                     <br />
                     <p>
-                      <b>Summary.</b> Designed the somplete system starting from
-                      the ER Diagram, then coming up with the relational Tables.
-                      The Library Management System consists of 3 views- the
-                      Manager view, the Librarian View, the Member View. All 3
-                      can view the list of book available across all branches
-                      and search through the same. The members can additionally
-                      reserve books, such they can access it as soon as it is
-                      available. The librarian can issue the books and return
-                      them for the members through this online portal. The
-                      Librarian can also add members and remove members based on
-                      the member's duration and renewal of membership. The
-                      manager can add and remove librarians in any branch.
-                      Databases were created in PostreSQL and MySQL to store all
-                      data which was hosted with a user friendly front-end,
-                      designed using HTML, CSS, JavaScript. PHP served as the
-                      backend. The user can execute simple and complex queries
-                      through the website.
+                      <b>Summary.</b> Designed the complete system starting from
+                      the <u>ER Diagram</u>, then coming up with the
+                      <u>relational Tables</u>. The Library Management System
+                      consists of <u>3 views</u>- the Manager view, the
+                      Librarian View, the Member View. All 3 can view the list
+                      of book available across all branches and
+                      <u>search through</u> the same. The members can
+                      additionally <u>reserve books</u>, such they can access it
+                      as soon as it is available. The librarian can issue the
+                      books and return them for the members through this online
+                      portal. The Librarian can also add members and remove
+                      members based on the member's duration and renewal of
+                      membership. The manager can add and remove librarians in
+                      any branch. Databases were created in <u>PostreSQL</u> and
+                      <u>MySQL</u> to store all data which was hosted with a
+                      user friendly <u>front-end</u>, designed using HTML, CSS,
+                      JavaScript. PHP served as the <u>backend</u>. The user can
+                      execute simple and <u>complex queries</u> through the
+                      website.
                       <br />
                       <b>Technology used.</b> MySQL, PostgreSQL, HTML,
                       JavaScript, PHP, CSS, Apache Server.
@@ -653,7 +663,7 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <img src="toy compiler.jpg" height="300" width="300" alt="" />
+              <img src="toy compiler.jpg" height="200" width="200" alt="" />
               <h3>
                 <a href="https://github.com/Anagha18/Toy-Compiler"
                   ><img src="link.png" height="20" width="20" alt="link" /><img
@@ -684,22 +694,26 @@
                   <div class="modal-body">
                     <br />
                     <p>
-                      <b>Summary.</b> Created a mini compiler for Java written
-                      in yacc and lex, to initially design the Context Free
-                      Grammar, which included constructs like multiple nested
-                      for loops, while,if-else, print statements, etc. Then
-                      generate the Abstract Syntax Tree from a Java class . Then
-                      the Intermediate Code was generated taking the AST as
-                      input to generate 3 address codes. The 3 address code was
-                      then taken as input for code optimization. The code
-                      optimization removed dead code, performed constant
-                      sub-expression elimination and constant folding. The code
-                      was then pre-processed before converting the optimised
-                      code to ARM Assembly. The pre-processing was automating
-                      the accumulation of all commands under the respective
-                      branches. From here, the Assembly code generated was ARM,
-                      this was achieved with python. This whole mini compiler
-                      execution was automated through bash scripts.
+                      <b>Summary.</b> Created a
+                      <u>mini compiler for Java</u> written in
+                      <u>yacc and lex</u>, to initially design the
+                      <u>Context Free Grammar</u>, which included
+                      <u>constructs</u> like multiple nested for loops,
+                      while,if-else, print statements, etc. Then generate the
+                      <u>Abstract Syntax Tree</u> from a Java class . Then the
+                      <u>Intermediate Code</u> was generated taking the AST as
+                      input to generate <u>3 address codes</u>. The 3 address
+                      code was then taken as input for <u>code optimization</u>.
+                      The code optimization removed <u>dead code</u>, performed
+                      <u>constant sub-expression elimination</u> and
+                      <u>constant folding</u>. The code was then pre-processed
+                      before converting the optimised code to
+                      <u>ARM Assembly</u>. The <u>pre-processing</u> was
+                      automating the accumulation of all commands under the
+                      respective branches. From here, the Assembly code
+                      generated was ARM, this was achieved with python. This
+                      whole mini compiler execution was automated through
+                      <u>bash scripts</u>.
                       <br />
                       <b>Technology used.</b> Yacc, Lex, Shell Scripting,
                       Python, Java.
@@ -1033,8 +1047,8 @@
             <section class="box style1">
               <img
                 src="segautomotive.webp"
-                height="200"
-                width="300"
+                height="150"
+                width="200"
                 alt="Amazon"
               />
               <h3>SEG Automotive</h3>
@@ -1058,7 +1072,7 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <img src="amazon.jpg" height="200" width="300" alt="Amazon" />
+              <img src="amazon.jpg" height="150" width="200" alt="Amazon" />
               <h3>Amazon</h3>
               <h4>ACMS <i>Apr 2020 - Jun 2020</i></h4>
               <p>
@@ -1081,14 +1095,8 @@
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <section class="box style1">
-              <center>
-                <img
-                  src="Black Logo.JPG"
-                  height="200"
-                  width="300"
-                  alt="Amazon"
-                />
-              </center>
+              <img src="Black Logo.JPG" height="150" width="200" alt="Amazon" />
+
               <h3>Equinox- The Space Club</h3>
               <h4>
                 Project Head for HalbEx <br />Domain Head for Navigation and
